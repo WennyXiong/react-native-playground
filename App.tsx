@@ -7,6 +7,7 @@
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
+import { PaperProvider } from 'react-native-paper';
 import {
   ScrollView,
   StatusBar,
@@ -73,6 +74,8 @@ function App(): React.JSX.Element {
   const safePadding = '5%';
 
   return (
+    <PaperProvider>
+
     <View style={backgroundStyle}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
@@ -106,6 +109,8 @@ function App(): React.JSX.Element {
         </View>
       </ScrollView>
     </View>
+    </PaperProvider>
+
   );
 }
 
