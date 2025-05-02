@@ -1,3 +1,11 @@
+# React Native
+ios/Pods/
+android/.gradle/
+android/.idea/
+*.log
+.env
+
+
 # OSX
 #
 .DS_Store
